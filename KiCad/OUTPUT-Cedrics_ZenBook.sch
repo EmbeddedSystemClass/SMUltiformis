@@ -1,0 +1,353 @@
+EESchema Schematic File Version 4
+LIBS:ProSMU-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LT1970CFEPBF:LT1970CFEPBF U?
+U 1 1 5D25F213
+P 5500 3600
+F 0 "U?" V 5450 3600 50  0000 C CNN
+F 1 "LT1970CFEPBF" V 5550 3600 50  0000 C CNN
+F 2 "SOP65P640X120-21N" H 5500 3600 50  0001 L BNN
+F 3 "OP Amp Single GP ?18V/36V 20-Pin TSSOP EP" H 5500 3600 50  0001 L BNN
+F 4 "TSSOP-20 Linear Technology" H 5500 3600 50  0001 L BNN "Feld4"
+F 5 "Linear Technology/Analog" H 5500 3600 50  0001 L BNN "Feld5"
+F 6 "LT1970CFE#PBF-ND" H 5500 3600 50  0001 L BNN "Feld6"
+F 7 "https://www.digikey.com/product-detail/en/linear-technology-analog-devices/LT1970CFE-PBF/LT1970CFE-PBF-ND/889809?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 5500 3600 50  0001 L BNN "Feld7"
+F 8 "LT1970CFE#PBF" H 5500 3600 50  0001 L BNN "Feld8"
+	1    5500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4500 4600 4500
+Wire Wire Line
+	4600 4500 4600 3200
+Wire Wire Line
+	4600 3200 4800 3200
+Wire Wire Line
+	4800 3100 4600 3100
+Wire Wire Line
+	4600 3100 4600 3200
+Connection ~ 4600 3200
+Wire Wire Line
+	4800 3000 4600 3000
+Wire Wire Line
+	4600 3000 4600 3100
+Connection ~ 4600 3100
+Wire Wire Line
+	4800 2900 4600 2900
+Wire Wire Line
+	4600 2900 4600 3000
+Connection ~ 4600 3000
+Wire Wire Line
+	4500 4200 4500 2800
+Wire Wire Line
+	4500 2800 4800 2800
+Wire Wire Line
+	4500 4200 4800 4200
+Connection ~ 4500 2800
+$Comp
+L power:+15V #PWR?
+U 1 1 5D25F22A
+P 4500 1850
+F 0 "#PWR?" H 4500 1700 50  0001 C CNN
+F 1 "+15V" V 4500 2100 50  0000 C CNN
+F 2 "" H 4500 1850 50  0001 C CNN
+F 3 "" H 4500 1850 50  0001 C CNN
+	1    4500 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3800 4700 3800
+Wire Wire Line
+	4800 3700 4700 3700
+Wire Wire Line
+	4700 3700 4700 3800
+Connection ~ 4700 3800
+Wire Wire Line
+	4700 3800 4300 3800
+Wire Wire Line
+	4800 3900 4700 3900
+Wire Wire Line
+	4700 3900 4700 4100
+Wire Wire Line
+	4700 4100 4800 4100
+Wire Wire Line
+	4700 4100 4300 4100
+Connection ~ 4700 4100
+Wire Wire Line
+	4800 4000 4300 4000
+Wire Wire Line
+	4800 4400 4500 4400
+Wire Wire Line
+	4500 4400 4500 5150
+$Comp
+L Transistor_FET:IRF540N Q?
+U 1 1 5D25F244
+P 7300 3300
+F 0 "Q?" H 7505 3346 50  0000 L CNN
+F 1 "IRF530" H 7505 3255 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7550 3225 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf530.pdf" H 7300 3300 50  0001 L CNN
+	1    7300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF9540N Q?
+U 1 1 5D25F24B
+P 7300 2700
+F 0 "Q?" H 7506 2654 50  0000 L CNN
+F 1 "IRF9530" H 7506 2745 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7500 2625 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf9530.pdf" H 7300 2700 50  0001 L CNN
+	1    7300 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D25F252
+P 7150 3000
+F 0 "R?" V 7050 3000 50  0000 C CNN
+F 1 "100" V 7150 3000 50  0000 C CNN
+F 2 "" V 7080 3000 50  0001 C CNN
+F 3 "~" H 7150 3000 50  0001 C CNN
+	1    7150 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3000 7400 2900
+Wire Wire Line
+	7400 3000 7400 3100
+Connection ~ 7400 3000
+Wire Wire Line
+	7400 3500 7400 5450
+Wire Wire Line
+	4800 4700 4700 4700
+Wire Wire Line
+	4700 4700 4700 5050
+Wire Wire Line
+	4700 5050 7000 5050
+Wire Wire Line
+	7000 5050 7000 3300
+Wire Wire Line
+	7000 3300 7100 3300
+$Comp
+L Device:R R?
+U 1 1 5D25F273
+P 7000 5250
+F 0 "R?" V 6900 5200 50  0000 L CNN
+F 1 "100" V 7000 5250 50  0000 C CNN
+F 2 "" V 6930 5250 50  0001 C CNN
+F 3 "~" H 7000 5250 50  0001 C CNN
+	1    7000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5100 7000 5050
+Connection ~ 7000 5050
+Wire Wire Line
+	7000 5400 7000 5450
+Wire Wire Line
+	7000 5450 7400 5450
+Wire Wire Line
+	7100 2700 7000 2700
+Wire Wire Line
+	7000 2700 7000 2350
+Wire Wire Line
+	4600 2700 4600 2350
+Wire Wire Line
+	4600 2350 7000 2350
+Wire Wire Line
+	4600 2700 4800 2700
+$Comp
+L Device:R R?
+U 1 1 5D25F284
+P 7000 2150
+F 0 "R?" V 6900 2100 50  0000 L CNN
+F 1 "100" V 7000 2150 50  0000 C CNN
+F 2 "" V 6930 2150 50  0001 C CNN
+F 3 "~" H 7000 2150 50  0001 C CNN
+	1    7000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2350 7000 2300
+Connection ~ 7000 2350
+Wire Wire Line
+	7000 2000 7000 1950
+Wire Wire Line
+	7000 1950 6750 1950
+Wire Wire Line
+	4500 1950 4500 2800
+Wire Wire Line
+	4500 1950 4500 1850
+Connection ~ 4500 1950
+Wire Wire Line
+	7000 1950 7400 1950
+Wire Wire Line
+	7400 1950 7400 2500
+Connection ~ 7000 1950
+$Comp
+L Device:R_Shunt R?
+U 1 1 5D25F295
+P 8000 3300
+F 0 "R?" V 7900 3350 50  0000 R CNN
+F 1 "0.1" V 8000 3300 50  0000 C CNN
+F 2 "" V 7930 3300 50  0001 C CNN
+F 3 "~" H 8000 3300 50  0001 C CNN
+	1    8000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3000 8000 3100
+Wire Wire Line
+	8000 3500 8000 3700
+Text GLabel 8000 3700 3    39   Output ~ 0
+OUT
+Wire Wire Line
+	8150 3200 8350 3200
+Wire Wire Line
+	8150 3400 8350 3400
+Text GLabel 8350 3200 2    39   Output ~ 0
+SENSE+
+Text GLabel 8350 3400 2    39   Output ~ 0
+SENSE-
+Text GLabel 4300 4100 0    39   Input ~ 0
+SENSE-
+Text GLabel 4300 4000 0    39   Input ~ 0
+SENSE+
+$Comp
+L Device:R R?
+U 1 1 5D25F2A5
+P 3850 3500
+F 0 "R?" V 3750 3500 50  0000 C CNN
+F 1 "2k" V 3850 3500 50  0000 C CNN
+F 2 "" V 3780 3500 50  0001 C CNN
+F 3 "~" H 3850 3500 50  0001 C CNN
+	1    3850 3500
+	0    1    1    0   
+$EndComp
+Text GLabel 4300 3800 0    39   Input ~ 0
+ISET
+$Comp
+L Device:R R?
+U 1 1 5D25F2AD
+P 3850 3700
+F 0 "R?" V 3750 3700 50  0000 C CNN
+F 1 "1k" V 3850 3700 50  0000 C CNN
+F 2 "" V 3780 3700 50  0001 C CNN
+F 3 "~" H 3850 3700 50  0001 C CNN
+	1    3850 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 3700 4100 3700
+Wire Wire Line
+	4100 3700 4100 3500
+Wire Wire Line
+	4100 3500 4000 3500
+Wire Wire Line
+	4100 3500 4800 3500
+Connection ~ 4100 3500
+Wire Wire Line
+	3700 3700 3600 3700
+Wire Wire Line
+	3600 3700 3600 5150
+Wire Wire Line
+	3600 5250 3600 5150
+Connection ~ 3600 5150
+Wire Wire Line
+	3700 3500 3600 3500
+Text GLabel 3600 3500 0    39   Input ~ 0
+SENSE-
+Wire Wire Line
+	7400 3000 8000 3000
+Wire Wire Line
+	4800 3400 4300 3400
+Text GLabel 4300 3400 0    39   Input ~ 0
+USET
+$Comp
+L Device:R R?
+U 1 1 5D25F2CF
+P 6750 2150
+F 0 "R?" V 6650 2100 50  0000 L CNN
+F 1 "3.3k" V 6750 2150 50  0000 C CNN
+F 2 "" V 6680 2150 50  0001 C CNN
+F 3 "~" H 6750 2150 50  0001 C CNN
+	1    6750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D25F2D6
+P 6550 2150
+F 0 "R?" V 6450 2100 50  0000 L CNN
+F 1 "3.3k" V 6550 2150 50  0000 C CNN
+F 2 "" V 6480 2150 50  0001 C CNN
+F 3 "~" H 6550 2150 50  0001 C CNN
+	1    6550 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2800 6550 2800
+Wire Wire Line
+	6200 2900 6750 2900
+Wire Wire Line
+	6750 2900 6750 2300
+Wire Wire Line
+	6750 2000 6750 1950
+Connection ~ 6750 1950
+Wire Wire Line
+	7400 3000 7300 3000
+Wire Wire Line
+	6200 3000 7000 3000
+Wire Wire Line
+	4500 1950 6550 1950
+Wire Wire Line
+	6550 2800 6550 2700
+Wire Wire Line
+	6200 2700 6550 2700
+Connection ~ 6550 2700
+Wire Wire Line
+	6550 2700 6550 2300
+Wire Wire Line
+	6550 2000 6550 1950
+Connection ~ 6550 1950
+Wire Wire Line
+	6550 1950 6750 1950
+Wire Wire Line
+	6750 2900 6750 3200
+Connection ~ 6750 2900
+Wire Wire Line
+	6550 2800 6550 3200
+Connection ~ 6550 2800
+Text GLabel 6750 3200 3    39   Output ~ 0
+TMP_ALRT
+Text GLabel 6550 3200 3    39   Output ~ 0
+I_ALRT
+$Comp
+L power:GND #PWR?
+U 1 1 5D25F2F2
+P 3600 5250
+F 0 "#PWR?" H 3600 5000 50  0001 C CNN
+F 1 "GND" H 3605 5077 50  0000 C CNN
+F 2 "" H 3600 5250 50  0001 C CNN
+F 3 "" H 3600 5250 50  0001 C CNN
+	1    3600 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5150 4500 5150
+$EndSCHEMATC
