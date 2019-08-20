@@ -213,46 +213,34 @@ F 3 "" H 2500 7450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 5150 1800 5150
-Wire Wire Line
-	2000 5450 1800 5450
-Wire Wire Line
-	2000 5550 1800 5550
-Wire Wire Line
-	2000 5650 1800 5650
-Wire Wire Line
-	2000 5750 1800 5750
-Wire Wire Line
-	2000 5850 1800 5850
 Text Label 1800 5150 0    50   ~ 0
 IO0
 Text Label 1600 5250 0    50   ~ 0
 IO2_LED
 Text Label 1600 5350 0    50   ~ 0
 IO4_REFEN
-Text Label 1800 5450 0    50   ~ 0
-IO5
-Text Label 1800 5550 0    50   ~ 0
-IO12
-Text Label 1800 5650 0    50   ~ 0
-IO13
-Text Label 1800 5750 0    50   ~ 0
-IO14
-Text Label 1800 5850 0    50   ~ 0
-IO15
-Text Label 1600 5950 0    50   ~ 0
-IO16_CS1
-Text Label 1600 6050 0    50   ~ 0
-IO17_CS2
-Text Label 1600 6150 0    50   ~ 0
-IO18_SCK
-Text Label 1600 6250 0    50   ~ 0
-IO19_MISO
+Text Label 1500 5450 0    50   ~ 0
+IO5_VCS0
+Text Label 1400 5550 0    50   ~ 0
+IO12_HMISO
+Text Label 1400 5650 0    50   ~ 0
+IO13_HMOSI
+Text Label 1400 5750 0    50   ~ 0
+IO14_HSCLK
+Text Label 1400 5850 0    50   ~ 0
+IO15_HCS0
+Text Label 1800 6050 0    50   ~ 0
+IO17
+Text Label 1500 6150 0    50   ~ 0
+IO18_VSCLK
+Text Label 1500 6250 0    50   ~ 0
+IO19_VMISO
 Text Label 1600 6350 0    50   ~ 0
 IO21_SDA
 Text Label 1600 6450 0    50   ~ 0
 IO22_SCL
-Text Label 1600 6550 0    50   ~ 0
-IO23_MOSI
+Text Label 1500 6550 0    50   ~ 0
+IO23_VMOSI
 Text Label 1350 6650 0    50   ~ 0
 IO25_ADC2_CH8
 Text Label 1350 6750 0    50   ~ 0
@@ -294,86 +282,84 @@ NoConn ~ 3400 5450
 NoConn ~ 3400 5350
 NoConn ~ 3400 5250
 Wire Wire Line
-	2000 5050 1150 5050
+	900  5050 900  5150
 Wire Wire Line
-	1150 5050 1150 5150
-Wire Wire Line
-	1150 5050 750  5050
-Connection ~ 1150 5050
+	900  5050 500  5050
+Connection ~ 900  5050
 $Comp
 L Switch:SW_Push SW?
 U 1 1 5D5BC301
-P 1150 5350
-F 0 "SW?" V 1104 5498 50  0000 L CNN
-F 1 "RESET" V 1195 5498 50  0000 L CNN
-F 2 "" H 1150 5550 50  0001 C CNN
-F 3 "" H 1150 5550 50  0001 C CNN
-	1    1150 5350
+P 900 5350
+F 0 "SW?" V 854 5498 50  0000 L CNN
+F 1 "RESET" V 945 5498 50  0000 L CNN
+F 2 "" H 900 5550 50  0001 C CNN
+F 3 "" H 900 5550 50  0001 C CNN
+	1    900  5350
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5D5BC4AE
-P 750 5350
-F 0 "C?" H 842 5396 50  0000 L CNN
-F 1 "100n" H 842 5305 50  0000 L CNN
-F 2 "" H 750 5350 50  0001 C CNN
-F 3 "~" H 750 5350 50  0001 C CNN
-	1    750  5350
+P 500 5350
+F 0 "C?" H 592 5396 50  0000 L CNN
+F 1 "100n" H 592 5305 50  0000 L CNN
+F 2 "" H 500 5350 50  0001 C CNN
+F 3 "~" H 500 5350 50  0001 C CNN
+	1    500  5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	750  5050 750  5250
+	500  5050 500  5250
 Wire Wire Line
-	750  5450 750  5650
+	500  5450 500  5650
 Wire Wire Line
-	1150 5550 1150 5650
+	900  5550 900  5650
 $Comp
 L power:GND #PWR?
 U 1 1 5D5BFB0B
-P 1150 5650
-F 0 "#PWR?" H 1150 5400 50  0001 C CNN
-F 1 "GND" H 1155 5477 50  0000 C CNN
-F 2 "" H 1150 5650 50  0001 C CNN
-F 3 "" H 1150 5650 50  0001 C CNN
-	1    1150 5650
+P 900 5650
+F 0 "#PWR?" H 900 5400 50  0001 C CNN
+F 1 "GND" H 905 5477 50  0000 C CNN
+F 2 "" H 900 5650 50  0001 C CNN
+F 3 "" H 900 5650 50  0001 C CNN
+	1    900  5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5D5BFB49
-P 750 5650
-F 0 "#PWR?" H 750 5400 50  0001 C CNN
-F 1 "GND" H 755 5477 50  0000 C CNN
-F 2 "" H 750 5650 50  0001 C CNN
-F 3 "" H 750 5650 50  0001 C CNN
-	1    750  5650
+P 500 5650
+F 0 "#PWR?" H 500 5400 50  0001 C CNN
+F 1 "GND" H 505 5477 50  0000 C CNN
+F 2 "" H 500 5650 50  0001 C CNN
+F 3 "" H 500 5650 50  0001 C CNN
+	1    500  5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 5050 1150 4950
+	900  5050 900  4950
 $Comp
 L Device:R R?
 U 1 1 5D5C0EA8
-P 1150 4800
-F 0 "R?" H 1220 4846 50  0000 L CNN
-F 1 "10k" H 1220 4755 50  0000 L CNN
-F 2 "" V 1080 4800 50  0001 C CNN
-F 3 "~" H 1150 4800 50  0001 C CNN
-	1    1150 4800
+P 900 4800
+F 0 "R?" H 970 4846 50  0000 L CNN
+F 1 "10k" H 970 4755 50  0000 L CNN
+F 2 "" V 830 4800 50  0001 C CNN
+F 3 "~" H 900 4800 50  0001 C CNN
+	1    900  4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 4650 1150 4550
+	900  4650 900  4550
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5D5C2258
-P 1150 4550
-F 0 "#PWR?" H 1150 4400 50  0001 C CNN
-F 1 "+3V3" H 1165 4723 50  0000 C CNN
-F 2 "" H 1150 4550 50  0001 C CNN
-F 3 "" H 1150 4550 50  0001 C CNN
-	1    1150 4550
+P 900 4550
+F 0 "#PWR?" H 900 4400 50  0001 C CNN
+F 1 "+3V3" H 915 4723 50  0000 C CNN
+F 2 "" H 900 4550 50  0001 C CNN
+F 3 "" H 900 4550 50  0001 C CNN
+	1    900  4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -484,7 +470,7 @@ Text Label 1050 1000 3    39   ~ 0
 RTS
 Text Label 1250 1000 3    39   ~ 0
 DTR
-Text Label 750  5050 0    39   ~ 0
+Text Label 500  5050 0    39   ~ 0
 RESET
 $Comp
 L Connector:USB_B_Micro J?
@@ -687,12 +673,6 @@ Wire Wire Line
 Wire Wire Line
 	1600 6350 2000 6350
 Wire Wire Line
-	1600 6550 2000 6550
-Wire Wire Line
-	1600 6250 2000 6250
-Wire Wire Line
-	1600 6150 2000 6150
-Wire Wire Line
 	3400 6350 4050 6350
 Wire Wire Line
 	3400 6450 4050 6450
@@ -700,10 +680,6 @@ Wire Wire Line
 	1350 6650 2000 6650
 Wire Wire Line
 	1350 6750 2000 6750
-Wire Wire Line
-	1600 6050 2000 6050
-Wire Wire Line
-	1600 5950 2000 5950
 Wire Wire Line
 	1600 5350 2000 5350
 Text Label 6750 5200 0    50   ~ 0
@@ -731,4 +707,115 @@ F 3 "~" H 5400 2550 50  0001 C CNN
 	1    5400 2550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4250 6200 4250 6100
+$Comp
+L power:+5V #PWR?
+U 1 1 5D5CCBF3
+P 4250 6100
+F 0 "#PWR?" H 4250 5950 50  0001 C CNN
+F 1 "+5V" H 4265 6273 50  0000 C CNN
+F 2 "" H 4250 6100 50  0001 C CNN
+F 3 "" H 4250 6100 50  0001 C CNN
+	1    4250 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6100 4850 6100
+Wire Wire Line
+	4850 6100 4850 6300
+$Comp
+L power:GND #PWR?
+U 1 1 5D5D086F
+P 4850 6300
+F 0 "#PWR?" H 4850 6050 50  0001 C CNN
+F 1 "GND" H 4855 6127 50  0000 C CNN
+F 2 "" H 4850 6300 50  0001 C CNN
+F 3 "" H 4850 6300 50  0001 C CNN
+	1    4850 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 5300 4750 5300
+Wire Wire Line
+	4950 5200 4750 5200
+Wire Wire Line
+	4950 5100 4750 5100
+Wire Wire Line
+	4950 5000 4750 5000
+Wire Wire Line
+	4950 4900 4750 4900
+$Comp
+L ILI9341_2.8SPI:2.8"display U?
+U 1 1 5D607EF0
+P 5400 5550
+F 0 "U?" H 5828 5601 50  0000 L CNN
+F 1 "2.8\"display" H 5828 5510 50  0000 L CNN
+F 2 "" H 5550 5550 50  0001 C CNN
+F 3 "" H 5550 5550 50  0001 C CNN
+	1    5400 5550
+	1    0    0    -1  
+$EndComp
+Text Label 4500 5700 0    50   ~ 0
+IO13_HMOSI
+Wire Wire Line
+	4250 6200 4950 6200
+Text Label 4500 5400 0    50   ~ 0
+IO11_HMISO
+Text Label 4500 5600 0    50   ~ 0
+IO14_HSCLK
+Text Label 4500 6000 0    50   ~ 0
+IO15_HCS0
+Wire Wire Line
+	4500 6000 4950 6000
+Wire Wire Line
+	4500 5700 4950 5700
+Wire Wire Line
+	4500 5600 4950 5600
+Wire Wire Line
+	4500 5400 4950 5400
+Wire Wire Line
+	4500 5900 4950 5900
+Wire Wire Line
+	4500 5800 4950 5800
+Wire Wire Line
+	4500 5500 4950 5500
+Wire Wire Line
+	900  5050 2000 5050
+Wire Wire Line
+	1400 5550 2000 5550
+Wire Wire Line
+	1400 5650 2000 5650
+Wire Wire Line
+	1400 5750 2000 5750
+Wire Wire Line
+	1400 5850 2000 5850
+Text Label 1800 5950 0    50   ~ 0
+IO16
+Wire Wire Line
+	2000 5950 1800 5950
+Wire Wire Line
+	2000 6050 1800 6050
+Wire Wire Line
+	1500 6550 2000 6550
+Wire Wire Line
+	1500 6250 2000 6250
+Wire Wire Line
+	1500 6150 2000 6150
+Wire Wire Line
+	1500 5450 2000 5450
+Wire Notes Line style solid rgb(0, 194, 0)
+	1500 6550 1500 6450
+Wire Notes Line style solid rgb(0, 194, 0)
+	1500 6250 1500 6050
+Wire Notes Line style solid rgb(0, 194, 0)
+	1500 5450 1500 5350
+Wire Notes Line style solid rgb(0, 194, 194)
+	1400 5850 1400 5450
+Wire Notes Line style solid rgb(194, 194, 0)
+	1350 6550 1350 6850
+Wire Notes Line style solid rgb(194, 194, 0)
+	4050 6450 4050 6250
+Wire Notes Line style solid rgb(194, 0, 0)
+	1600 6450 1600 6250
 $EndSCHEMATC
