@@ -696,17 +696,6 @@ Text Label 11000 5300 2    50   ~ 0
 IO27_ADC2_CH7
 Wire Wire Line
 	10350 5300 11000 5300
-$Comp
-L Connector_Generic:Conn_02x12_Counter_Clockwise J?
-U 1 1 5D62732A
-P 5400 2550
-F 0 "J?" H 5450 3267 50  0000 C CNN
-F 1 "Conn_02x12_Counter_Clockwise" H 5450 3176 50  0000 C CNN
-F 2 "" H 5400 2550 50  0001 C CNN
-F 3 "~" H 5400 2550 50  0001 C CNN
-	1    5400 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4250 6200 4250 6100
 $Comp
@@ -745,17 +734,6 @@ Wire Wire Line
 	4950 5000 4750 5000
 Wire Wire Line
 	4950 4900 4750 4900
-$Comp
-L ILI9341_2.8SPI:2.8"display U?
-U 1 1 5D607EF0
-P 5400 5550
-F 0 "U?" H 5828 5601 50  0000 L CNN
-F 1 "2.8\"display" H 5828 5510 50  0000 L CNN
-F 2 "" H 5550 5550 50  0001 C CNN
-F 3 "" H 5550 5550 50  0001 C CNN
-	1    5400 5550
-	1    0    0    -1  
-$EndComp
 Text Label 4500 5700 0    50   ~ 0
 IO13_HMOSI
 Wire Wire Line
@@ -810,7 +788,7 @@ Wire Notes Line style solid rgb(0, 194, 0)
 	1500 6250 1500 6050
 Wire Notes Line style solid rgb(0, 194, 0)
 	1500 5450 1500 5350
-Wire Notes Line style solid rgb(0, 194, 194)
+Wire Notes Line style solid rgb(0, 194, 0)
 	1400 5850 1400 5450
 Wire Notes Line style solid rgb(194, 194, 0)
 	1350 6550 1350 6850
@@ -818,4 +796,15 @@ Wire Notes Line style solid rgb(194, 194, 0)
 	4050 6450 4050 6250
 Wire Notes Line style solid rgb(194, 0, 0)
 	1600 6450 1600 6250
+$Comp
+L ILI9341_2.8SPI:2.8"display U?
+U 1 1 5D60C165
+P 5400 5550
+F 0 "U?" H 5828 5601 50  0000 L CNN
+F 1 "2.8\"display" H 5828 5510 50  0000 L CNN
+F 2 "" H 5550 5550 50  0001 C CNN
+F 3 "" H 5550 5550 50  0001 C CNN
+	1    5400 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

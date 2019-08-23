@@ -4,5 +4,5 @@
   (lib (name MAX6071)(type Legacy)(uri C:/Users/cedr0/OneDrive/Dokumente/Privat/KiCad/ProSMU/MAX6071.lib)(options "")(descr ""))
   (lib (name UMH3N)(type Legacy)(uri C:/Users/cedr0/OneDrive/Dokumente/Privat/KiCad/ProSMU/UMH3N.lib)(options "")(descr ""))
   (lib (name CH340)(type Legacy)(uri C:/Users/cedr0/OneDrive/Dokumente/Privat/KiCad/ProSMU/CH340.lib)(options "")(descr ""))
-  (lib (name ILI9341_2.8SPI)(type Legacy)(uri C:/Users/cedr0/Documents/GitHub/SMUltiformis/KiCad/ILI9341_2.8SPI.lib)(options "")(descr ""))
+  (lib (name ILI9341_2.8SPI)(type Legacy)(uri ${KIPRJMOD}/ILI9341_2.8SPI.lib)(options "")(descr ""))
 )
